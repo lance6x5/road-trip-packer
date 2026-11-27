@@ -85,6 +85,8 @@ a { color: var(--accent); }
 .feedback-actions { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
 .feedback-actions a { text-decoration: none; }
 .feedback-note { margin: 0.5rem 0 0; }
+.app-footer > .visit-count { font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.visit-count[hidden] { display: none; }
 
 /* ---------- Layout bits ---------- */
 .card {

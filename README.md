@@ -4,7 +4,9 @@
 
 **Every bag, every traveler, one checklist.**
 
-Trunkful is a small, offline-capable web app for building road trip packing checklists for the whole family. 100% client-side and hosted on GitHub Pages.
+![Visits](https://abacus.jasoncameron.dev/get/lance6x5.github.io/road-trip-packer/shield)
+
+Trunkful is a small, offline-capable web app for building road trip packing checklists for the whole family. Your trips are stored and processed entirely in your browser, and the app is hosted on GitHub Pages.
 
 **Live:** https://lance6x5.github.io/road-trip-packer/
 
@@ -51,6 +53,7 @@ src/
   dialog.js      accessible <dialog> helpers
   util.js        escaping, downloads, clipboard, toast
   feedback.js    pre-filled GitHub issue links for the footer Feedback menu
+  visits.js      anonymous per-session visit counter (Abacus) shown in the footer
   views/         home and trip HTML renderers
   styles.css     theme variables, layout, print styles
 tests/           vitest unit tests
@@ -79,4 +82,13 @@ The in-app links open a pre-filled GitHub issue form (app version and, for bugs,
 
 ## Privacy
 
-All data stays in your browser. Nothing is sent anywhere. Share links contain the list itself, so anyone with the link can see it.
+Your trip data never leaves your device: trips are stored in your browser and are never sent to a server. Share links contain the list itself, so anyone with the link can see it. The only outside request the app makes is the anonymous visit count described below.
+
+### Privacy & analytics
+
+Trunkful counts one anonymous page load per browser session using the open-source [Abacus](https://github.com/JasonLovesDoggo/abacus) counter. The count is shown in the app footer and in the badge above.
+
+- No cookies, no personal data stored, and nothing from your trips is sent.
+- Do Not Track and Global Privacy Control are respected: if either is on, your visit is not counted (the total is only read).
+- Like any web request, it reveals your IP address to the counter service.
+- The count is approximate (it includes bots and is not unique visitors) and is public.

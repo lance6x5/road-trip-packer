@@ -32,7 +32,11 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,webmanifest}'],
-        navigateFallback: 'index.html'
+        navigateFallback: 'index.html',
+        // Never cache or serve the anonymous visit counter from the service worker.
+        runtimeCaching: [
+          { urlPattern: /^https:\/\/abacus\.jasoncameron\.dev\//, handler: 'NetworkOnly' }
+        ]
       }
     })
   ],

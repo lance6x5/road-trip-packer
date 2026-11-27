@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-11-27
+
+### Added
+
+- Anonymous visit counter in the footer (e.g. "12,345 visits") using the open-source Abacus counter: one count per browser session, no cookies or personal data, skipped when Do Not Track or Global Privacy Control is on, hidden if the counter can't be reached.
+- Visits badge and a "Privacy & analytics" section in the README.
+
+### Changed
+
+- Footer and README privacy wording now say trip data stays in your browser and the only outside request is the anonymous visit count.
+- The service worker never caches the visit counter request (Workbox `NetworkOnly` rule).
+
 ## [1.1.0] - 2026-11-27
 
 ### Added
@@ -39,6 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet (first release).
 
-[Unreleased]: https://github.com/lance6x5/road-trip-packer/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/lance6x5/road-trip-packer/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/lance6x5/road-trip-packer/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/lance6x5/road-trip-packer/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/lance6x5/road-trip-packer/releases/tag/v1.0.0
