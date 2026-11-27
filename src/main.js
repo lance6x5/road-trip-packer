@@ -17,6 +17,11 @@ import { copyText, downloadJson, esc, slug, toast } from './util.js';
 
 const main = document.getElementById('main');
 
+/* global __APP_VERSION__ */
+const APP_VERSION = typeof __APP_VERSION__ === 'undefined' ? 'dev' : __APP_VERSION__;
+const versionEl = document.getElementById('app-version');
+if (versionEl) versionEl.textContent = `v${APP_VERSION}`;
+
 const state = {
   trips: [],
   current: null, // trip being viewed
@@ -30,10 +35,10 @@ function render(focusKey) {
   const active = focusKey ?? document.activeElement?.dataset?.fk;
   if (state.current) {
     main.innerHTML = renderTrip(state.current, { ephemeral: state.ephemeral, editingId: state.editingId });
-    document.title = `${state.current.name} · Road Trip Packer`;
+    document.title = `${state.current.name} · Trunkful`;
   } else {
     main.innerHTML = renderHome(state.trips);
-    document.title = 'Road Trip Packing List';
+    document.title = 'Trunkful: Road Trip Packing List';
   }
   if (active) main.querySelector(`[data-fk="${CSS.escape(active)}"]`)?.focus();
 }
@@ -245,7 +250,7 @@ main.addEventListener('change', (e) => {
       return commit(M.toggleItem(t, el.dataset.section, el.dataset.item), el.dataset.fk);
     case 'rename':
       // No re-render: avoids swallowing a click that caused this blur.
-      document.title = `${el.value.trim() || t.name} · Road Trip Packer`;
+      document.title = `${el.value.trim() || t.name} · Trunkful`;
       return commit({ ...t, name: el.value.trim() || t.name, updatedAt: Date.now() }, null, { rerender: false });
     case 'days':
       return commit({ ...t, days: M.clampDays(el.value), updatedAt: Date.now() }, 'days');

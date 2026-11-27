@@ -1,14 +1,21 @@
 /* ---------- Theme tokens (light default, dark via prefers-color-scheme) ---------- */
 :root {
-  --bg: #f4f6f8;
+  /* Trunkful brand: burnt orange + midnight indigo, with amber/teal luggage accents */
+  --brand-orange: #c2410c;
+  --brand-indigo: #1e1b4b;
+  --brand-amber: #f59e0b;
+  --brand-teal: #0f766e;
+  --bg: #fdf8f4;
   --surface: #ffffff;
-  --surface-2: #eef2f5;
-  --text: #13202b;
-  --muted: #4d5d6b;
-  --border: #c9d3dc;
-  --accent: #0f766e;
+  --surface-2: #f6eee7;
+  --text: #1e1b2e;
+  --muted: #5b5675;
+  --border: #dccfc4;
+  --accent: var(--brand-orange);
   --accent-text: #ffffff;
-  --accent-soft: #d5f0ec;
+  --accent-soft: #ffedd5;
+  --header-bg: var(--brand-indigo);
+  --header-text: #fff7ed;
   --danger: #b42318;
   --warn-bg: #fff4d6;
   --warn-text: #5c3d00;
@@ -19,15 +26,17 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d1520;
-    --surface: #152131;
-    --surface-2: #1d2c3f;
-    --text: #e8eef4;
-    --muted: #a8b6c4;
-    --border: #33465c;
-    --accent: #2dd4bf;
-    --accent-text: #04201d;
-    --accent-soft: #123a37;
+    --bg: #14121f;
+    --surface: #1f1c30;
+    --surface-2: #2a2640;
+    --text: #f3eef8;
+    --muted: #b7b0cc;
+    --border: #413b5c;
+    --accent: #fb923c;
+    --accent-text: #1a0d02;
+    --accent-soft: #43230f;
+    --header-bg: #0c0a17;
+    --header-text: #fed7aa;
     --danger: #ff8a80;
     --warn-bg: #3b2f0b;
     --warn-text: #ffe4a3;
@@ -59,10 +68,14 @@ a { color: var(--accent); }
 }
 
 .app-header {
-  background: var(--accent);
-  padding: 0.75rem 1rem;
+  background: var(--header-bg);
+  padding: 0.6rem 1rem;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1rem;
 }
-.brand { color: var(--accent-text); font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: 0.55rem; color: var(--header-text); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; text-decoration: none; min-height: var(--tap); }
+.brand img { border-radius: 8px; }
+.tagline { color: var(--header-text); opacity: 0.85; font-size: 0.9rem; }
+.app-footer { max-width: 860px; margin: 0 auto; padding: 1rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
 
 /* ---------- Layout bits ---------- */
 .card {

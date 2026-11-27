@@ -1,6 +1,10 @@
-# Road Trip Packing List
+<p align="center"><img src="public/logo.svg" alt="Trunkful logo" width="480" /></p>
 
-A small, offline-capable web app for building road trip packing checklists for the whole family. 100% client-side and hosted on GitHub Pages.
+# Trunkful
+
+**Every bag, every traveler, one checklist.**
+
+Trunkful is a small, offline-capable web app for building road trip packing checklists for the whole family. 100% client-side and hosted on GitHub Pages.
 
 **Live:** https://lance6x5.github.io/road-trip-packer/
 
@@ -49,8 +53,18 @@ src/
   views/         home and trip HTML renderers
   styles.css     theme variables, layout, print styles
 tests/           vitest unit tests
-public/          SVG app icons
+public/          Trunkful logo and SVG app icons (favicon, 192, 512, maskable)
 ```
+
+## Versioning
+
+Trunkful follows [Semantic Versioning](https://semver.org/). The current version is in `package.json` and shown in the app footer (e.g. "v1.0.0").
+
+- **MAJOR**: breaking change to the stored data or share-link schema (old exports/links may need migration).
+- **MINOR**: new features that stay backward compatible.
+- **PATCH**: bug fixes and small tweaks.
+
+Changes are recorded in [CHANGELOG.md](CHANGELOG.md) (Keep a Changelog format). Each release is tagged `vX.Y.Z` and published as a GitHub release.
 
 ## Privacy
 
