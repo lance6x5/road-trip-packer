@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Silverlight DevTech">
+  <defs>
+    <linearGradient id="sl-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".45" stop-color="#c9cfdd"/>
+      <stop offset="1" stop-color="#7d8599"/>
+    </linearGradient>
+    <linearGradient id="sl-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1d3a"/>
+      <stop offset="1" stop-color="#0a0b18"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#sl-bg)"/>
+  <!-- silver crescent: outer circle minus offset inner circle -->
+  <path d="M38 12a20 20 0 1 0 14 34A16 16 0 1 1 38 12z" fill="url(#sl-silver)"/>
+  <!-- four-point spark -->
+  <path d="M44 14l2.2 5.8L52 22l-5.8 2.2L44 30l-2.2-5.8L36 22l5.8-2.2z" fill="#5eead4"/>
+</svg>

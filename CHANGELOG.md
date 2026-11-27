@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-11-27
+
+### Added
+
+- LICENSE.md with the PolyForm Noncommercial License 1.0.0 and its `Required Notice` line.
+- Studio credit in the footer ("A Silverlight DevTech project · © 2026 Silverlight DevTech") with the studio mark, a link to the license and a "More apps" link to the apps homepage (https://lance6x5.github.io/).
+- Trademark note, License section and author/copyright meta tags; a "Licensing of contributions" note in CONTRIBUTING.md.
+
+### Changed
+
+- Trunkful is now licensed under the PolyForm Noncommercial License 1.0.0 (source-available; previous versions had no license). Commercial use requires a separate license from Silverlight DevTech.
+
 ## [1.2.0] - 2026-11-27
 
 ### Added
@@ -51,7 +63,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet (first release).
 
-[Unreleased]: https://github.com/lance6x5/road-trip-packer/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/lance6x5/road-trip-packer/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/lance6x5/road-trip-packer/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/lance6x5/road-trip-packer/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/lance6x5/road-trip-packer/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/lance6x5/road-trip-packer/releases/tag/v1.0.0

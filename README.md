@@ -6,6 +6,10 @@
 
 ![Visits](https://abacus.jasoncameron.dev/get/lance6x5.github.io/road-trip-packer/shield)
 
+A **Silverlight DevTech** project · © 2026 Silverlight DevTech. Source-available under the [PolyForm Noncommercial License 1.0.0](LICENSE.md).
+
+More apps: https://lance6x5.github.io/
+
 Trunkful is a small, offline-capable web app for building road trip packing checklists for the whole family. Your trips are stored and processed entirely in your browser, and the app is hosted on GitHub Pages.
 
 **Live:** https://lance6x5.github.io/road-trip-packer/
@@ -92,3 +96,17 @@ Trunkful counts one anonymous page load per browser session using the open-sourc
 - Do Not Track and Global Privacy Control are respected: if either is on, your visit is not counted (the total is only read).
 - Like any web request, it reveals your IP address to the counter service.
 - The count is approximate (it includes bots and is not unique visitors) and is public.
+
+## License
+
+Copyright © 2026 Silverlight DevTech. Trunkful is **source-available**, not OSI-approved open source. It is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE.md) (SPDX: `PolyForm-Noncommercial-1.0.0`).
+
+- **Free for noncommercial use:** personal, educational, research, nonprofit and other noncommercial use is allowed under the license terms.
+- **Commercial use needs a separate license:** selling it, hosting it as a paid service, or using it inside a business product requires a commercial license from Silverlight DevTech. To ask, open a [GitHub issue](https://github.com/lance6x5/road-trip-packer/issues) on this repo.
+- **Redistribution:** anyone redistributing the code must keep [LICENSE.md](LICENSE.md), including its `Required Notice` line.
+
+Third-party dependencies keep their own licenses.
+
+## Trademarks
+
+Trunkful and its logo are trademarks of Silverlight DevTech. The license covers the code only, not the names or logos, so forks must use a different name and logo.

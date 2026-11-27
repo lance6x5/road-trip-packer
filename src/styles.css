@@ -87,6 +87,8 @@ a { color: var(--accent); }
 .feedback-note { margin: 0.5rem 0 0; }
 .app-footer > .visit-count { font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 .visit-count[hidden] { display: none; }
+.app-footer > .studio-credit { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.25rem 0.4rem; margin: 0.9rem 0 0; font-size: 0.8rem; }
+.studio-credit img { flex: none; border-radius: 4px; }
 
 /* ---------- Layout bits ---------- */
 .card {

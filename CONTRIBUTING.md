@@ -18,6 +18,10 @@ Please don't include personal data (real names, addresses, or share links to pri
 3. **Work:** changes happen on a branch (e.g. `fix/123-share-link`) and land through a pull request. The PR description references the issue with `Fixes #123` so the issue closes automatically on merge.
 4. **Release:** user-visible changes are recorded in [CHANGELOG.md](CHANGELOG.md) under the next version, following [Semantic Versioning](https://semver.org/). Each release is tagged `vX.Y.Z` and published as a GitHub release.
 
+## Licensing of contributions
+
+Trunkful is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE.md). By submitting a pull request, you agree that your contribution is licensed to Silverlight DevTech under the same terms and may also be offered under Silverlight DevTech's commercial licenses.
+
 ## Local development
 
 ```bash
