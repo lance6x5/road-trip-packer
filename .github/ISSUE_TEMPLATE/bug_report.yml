@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in Trunkful isn't working as expected.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Trunkful! Please don't include personal data (names, addresses, share links to private lists).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect to happen instead?
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown in the app footer (e.g. 1.1.0).
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / OS
+      description: e.g. Chrome 130 on Windows 11, Safari on iOS 18.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Screenshots / notes
+      description: Drag images here or add any other context.

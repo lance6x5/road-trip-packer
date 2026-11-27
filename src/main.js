@@ -14,6 +14,7 @@ import { renderHome } from './views/home.js';
 import { renderTrip } from './views/trip.js';
 import { openDialog, confirmDialog } from './dialog.js';
 import { copyText, downloadJson, esc, slug, toast } from './util.js';
+import { initFeedback } from './feedback.js';
 
 const main = document.getElementById('main');
 
@@ -21,6 +22,7 @@ const main = document.getElementById('main');
 const APP_VERSION = typeof __APP_VERSION__ === 'undefined' ? 'dev' : __APP_VERSION__;
 const versionEl = document.getElementById('app-version');
 if (versionEl) versionEl.textContent = `v${APP_VERSION}`;
+initFeedback(document.getElementById('feedback'), APP_VERSION);
 
 const state = {
   trips: [],

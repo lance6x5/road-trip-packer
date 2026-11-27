@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-27
+
+### Added
+
+- In-app feedback: a **Feedback** menu in the footer with "Report a bug" and "Request a feature", opening a pre-filled GitHub issue (app version and browser only, no trip data) in a new tab.
+- GitHub issue forms for bug reports and feature requests (auto-labelled `triage`), plus a CONTRIBUTING.md describing the triage flow.
+
+### Changed
+
+- README logo wordmark now adapts to dark mode so it stays readable.
+
 ## [1.0.0] - 2026-11-27
 
 ### Added
@@ -28,5 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet (first release).
 
-[Unreleased]: https://github.com/lance6x5/road-trip-packer/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/lance6x5/road-trip-packer/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/lance6x5/road-trip-packer/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/lance6x5/road-trip-packer/releases/tag/v1.0.0

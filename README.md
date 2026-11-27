@@ -50,6 +50,7 @@ src/
   storage.js     IndexedDB persistence with localStorage fallback
   dialog.js      accessible <dialog> helpers
   util.js        escaping, downloads, clipboard, toast
+  feedback.js    pre-filled GitHub issue links for the footer Feedback menu
   views/         home and trip HTML renderers
   styles.css     theme variables, layout, print styles
 tests/           vitest unit tests
@@ -65,6 +66,16 @@ Trunkful follows [Semantic Versioning](https://semver.org/). The current version
 - **PATCH**: bug fixes and small tweaks.
 
 Changes are recorded in [CHANGELOG.md](CHANGELOG.md) (Keep a Changelog format). Each release is tagged `vX.Y.Z` and published as a GitHub release.
+
+## Feedback & issues
+
+Found a bug or have an idea? Use the **Feedback** button in the app footer, or go straight to GitHub:
+
+- [Report a bug](https://github.com/lance6x5/road-trip-packer/issues/new?template=bug_report.yml)
+- [Request a feature](https://github.com/lance6x5/road-trip-packer/issues/new?template=feature_request.yml)
+- [All issues](https://github.com/lance6x5/road-trip-packer/issues)
+
+The in-app links open a pre-filled GitHub issue form (app version and, for bugs, your browser) in a new tab. A free GitHub account is required. Nothing from your trips is included; please don't add personal data. See [CONTRIBUTING.md](CONTRIBUTING.md) for how issues are triaged.
 
 ## Privacy
 

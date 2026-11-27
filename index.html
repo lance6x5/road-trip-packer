@@ -16,7 +16,19 @@
       <span class="tagline">Every bag, every traveler, one checklist.</span>
     </header>
     <main id="main" tabindex="-1"></main>
-    <footer class="app-footer no-print"><span>Trunkful <span id="app-version"></span></span> · Data stays in your browser.</footer>
+    <footer class="app-footer no-print">
+      <p><span>Trunkful <span id="app-version"></span></span> · Data stays in your browser.</p>
+      <details class="feedback" id="feedback">
+        <summary class="btn small">Feedback</summary>
+        <div class="feedback-panel">
+          <ul class="feedback-actions" aria-label="Feedback options">
+            <li><a class="btn small" data-feedback="bug" href="https://github.com/lance6x5/road-trip-packer/issues/new?template=bug_report.yml" target="_blank" rel="noopener">Report a bug</a></li>
+            <li><a class="btn small" data-feedback="feature" href="https://github.com/lance6x5/road-trip-packer/issues/new?template=feature_request.yml" target="_blank" rel="noopener">Request a feature</a></li>
+          </ul>
+          <p class="feedback-note">Opens GitHub — a free GitHub account is required. Don't include personal data.</p>
+        </div>
+      </details>
+    </footer>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
     <script type="module" src="/src/main.js"></script>

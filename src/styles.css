@@ -76,6 +76,15 @@ a { color: var(--accent); }
 .brand img { border-radius: 8px; }
 .tagline { color: var(--header-text); opacity: 0.85; font-size: 0.9rem; }
 .app-footer { max-width: 860px; margin: 0 auto; padding: 1rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
+.app-footer > p { margin: 0 0 0.6rem; }
+.feedback summary { list-style: none; display: inline-flex; }
+.feedback summary::-webkit-details-marker { display: none; }
+.feedback summary::after { content: '▾'; margin-left: 0.4rem; }
+.feedback[open] summary::after { content: '▴'; }
+.feedback-panel { margin-top: 0.6rem; }
+.feedback-actions { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.feedback-actions a { text-decoration: none; }
+.feedback-note { margin: 0.5rem 0 0; }
 
 /* ---------- Layout bits ---------- */
 .card {
