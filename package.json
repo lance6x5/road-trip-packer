@@ -1,0 +1,21 @@
+{
+  "name": "road-trip-packer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Road trip packing checklists from templates, per-traveler sections, shareable via URL. 100% client-side.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "lz-string": "^1.5.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11",
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^2.1.8"
+  }
+}
