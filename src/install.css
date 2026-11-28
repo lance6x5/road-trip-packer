@@ -1,0 +1,23 @@
+/* "Install app" button. Uses currentColor so it matches whichever header it sits in. */
+.pwa-install-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 36px; padding: 6px 14px; margin-left: auto;
+  font: inherit; font-size: .9rem; font-weight: 600; line-height: 1;
+  color: inherit; background: transparent;
+  border: 1.5px solid currentColor; border-radius: 999px;
+  cursor: pointer; white-space: nowrap;
+}
+.pwa-install-btn:hover { background: color-mix(in srgb, currentColor 12%, transparent); }
+.pwa-install-btn:focus-visible { outline: 3px solid currentColor; outline-offset: 2px; }
+.pwa-install-btn[hidden] { display: none; }
+.pwa-install-help {
+  position: absolute; z-index: 1000; right: 12px; margin-top: 8px; max-width: 280px;
+  padding: 12px 14px; border-radius: 12px;
+  background: #fff; color: #1a1a1a; border: 1px solid #d0d0d0; box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+  font-size: .9rem; line-height: 1.4;
+}
+.pwa-install-help p { margin: 0 0 8px; }
+.pwa-install-close { font: inherit; padding: 6px 12px; border-radius: 8px; border: 1px solid #888; background: #f4f4f4; color: #1a1a1a; cursor: pointer; }
+.pwa-install-help[hidden] { display: none; }
+@media (max-width: 480px) { .pwa-install-btn { padding: 6px 10px; } .pwa-install-btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } }
+@media print { .pwa-install-btn, .pwa-install-help { display: none !important; } }

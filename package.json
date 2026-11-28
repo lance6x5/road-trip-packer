@@ -1,7 +1,7 @@
 {
   "name": "road-trip-packer",
   "private": true,
-  "version": "1.3.1",
+  "version": "1.4.0",
   "license": "PolyForm-Noncommercial-1.0.0",
   "author": "Silverlight DevTech",
   "type": "module",

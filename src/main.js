@@ -17,6 +17,11 @@ import { copyText, downloadJson, esc, slug, toast } from './util.js';
 import { initFeedback } from './feedback.js';
 import { initVisits } from './visits.js';
 
+import { initInstallButton } from './install.js';
+
+// Offer an "Install app" button when the browser allows it and the app isn't installed yet.
+initInstallButton({ appName: 'Trunkful', selector: '.app-header' });
+
 const main = document.getElementById('main');
 
 /* global __APP_VERSION__ */
